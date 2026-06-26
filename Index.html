@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealtHome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+ <nav class="navbar navbar-expand-lg navbar-dark my-custom-nav fixed-top">
+            <div class="container px-3"> <a class="navbar-brand" href="#">
+             <img src="./Images/logo.png" alt="Wealthome Logo" class="nav-logo-img">
+             </a>
+                
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span> </button>
+                
+   <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li> </ul>
+                    
+  <div class="d-flex align-items-center gap-3">
+          <a href="#" class="nav-link text-white fw-semibold my-login-btn">Login</a>
+          <a href="#" class="btn my-blue-btn fw-bold px-4 rounded-pill">Get Started</a>
+           </div>
+           </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+ <section class="hero-section d-flex align-items-center">
+  <div class="container px-3">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 text-white text-content-hero">
+        <h1 class="fw-bold mb-3">
+          Find a place where <br>
+          you can be yourself.
+        </h1>
+        <p class="mb-4 text-white-50">
+          If you're looking for a place where you can be
+          yourself, don't give up. Keep searching until you
+          find a place that feels like home.
+        </p>
+
+        <div class="search-box">
+          <div class="row g-2 align-items-center bg-white p-3 rounded-4 shadow">
+
+          <div class="col-md-3">
+          <small class="text-muted d-block">Want To</small>
+
+         <div class="dropdown">
+         <button class="btn w-100 text-start p-0 border-0 dropdown-toggle" data-bs-toggle="dropdown">Buy </button>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Buy</a></li>
+                  <li><a class="dropdown-item" href="#">Rent</a></li>
+                  <li><a class="dropdown-item" href="#">Sell</a></li>
+             </ul>   
+            </div>
+            </div>
+
+            <div class="col-md-3 border-start">
+              <small class="text-muted d-block">Property Type</small>
+
+              <div class="dropdown">
+                <button class="btn w-100 text-start p-0 border-0 dropdown-toggle" data-bs-toggle="dropdown">
+                  Any
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Any</a></li>
+                  <li><a class="dropdown-item" href="#">Houses</a></li>
+                  <li><a class="dropdown-item" href="#">Apartments</a></li>
+                  <li><a class="dropdown-item" href="#">Villa</a></li>
+                  <li><a class="dropdown-item" href="#">Townhome</a></li>
+                  <li><a class="dropdown-item" href="#">Bungalow</a></li>
+                  <li><a class="dropdown-item" href="#">Loft</a></li>
+                </ul>
+              </div>
+            </div>
+
+       <div class="col-md-4 border-start">
+          <small class="text-muted d-block">Location</small>
+            <input type="text" class="form-control border-0 p-0" placeholder="Street, City, Zip...">
+            </div>
+
+            <div class="col-md-2">
+              <button class="btn btn-primary w-100 rounded-3"> Search </button>
+            </div>
+            </div>
+        </div>
+         </div>
+
+      <div class="col-12 col-lg-6 text-center text-lg-end">
+        <img src="./Images/hero.png" class="hero-house-img img-fluid" alt="Luxury House">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <section class="properties-section py-5 bg-light">
+    <div class="container">
+        
+        <div class="d-flex justify-content-between align-items-end mb-5">
+            <div>
+                <h2 class="fw-bold text-dark" style="font-size: 32px;">Best home in your city</h2>
+                <p class="text-muted mb-0" style="font-size: 14px; line-height: 22px;">
+                    Lorem ipsum dolor sit amet consectetur. In quisque scelerisque eget<br>id facilisis. Aliquam in libero egestas at.
+                </p>
+            </div>
+            <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" style="font-size: 14px;">
+                Explore more <i class="bi bi-arrow-up-right ms-1"></i>
+            </a>
+        </div>
+       <div class="row g-4">
+            
+     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-1.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-1" class="heart-checkbox d-none">
+                        <label for="heart-check-1" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>         
+           <div class="card-body p-3">
+            <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$710.68</h3>
+            <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">COVA Home Realty</h4>
+            <p class="text-muted small" style="font-size: 12px; line-height: 18px;">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+            <hr class="text-black-50 my-3">
+            <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                     <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                     <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                     <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+              <img src="./Images/property-2.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+              <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+              <input type="checkbox" id="heart-check-2" class="heart-checkbox d-none">
+              <label for="heart-check-2" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+              <i class="fa-regular fa-heart heart-empty"></i>
+              <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$630.44</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">Exit Realty</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                    </div>  </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-3.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-3" class="heart-checkbox d-none">
+                        <label for="heart-check-3" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$475.22</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">The Real Estate Group</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-4.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-4" class="heart-checkbox d-none">
+                        <label for="heart-check-4" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$576.28</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">757 Realty</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                    </div>
+                </div>  </div>
+
+                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-5.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-5" class="heart-checkbox d-none">
+                        <label for="heart-check-5" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$473.85</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">Beach Pros Realty Inc.</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">2715 Ash Dr. San Jose, South Dakota 83475</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-6.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-6" class="heart-checkbox d-none">
+                        <label for="heart-check-6" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$105.55</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">Keller Williams Elite</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">3517 W. Gray St. Utica, Pennsylvania 57861</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                    </div>
+                 </div>
+                 </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-7.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-6" class="heart-checkbox d-none">
+                        <label for="heart-check-6" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$105.55</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">Keller Williams Elite</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">3517 W. Gray St. Utica, Pennsylvania 57861</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-light shadow-sm rounded-4 overflow-hidden bg-white">
+                    <div class="position-relative overflow-hidden">
+                        <img src="./Images/property-8.jpg" class="card-img-top property-img" alt="Home" style="height: 220px; object-fit: cover;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-info text-dark fw-bold px-3 py-2 rounded-2" style="font-size: 12px; background-color: #00f2fe !important;">New</span>
+                        <input type="checkbox" id="heart-check-7" class="heart-checkbox d-none">
+                        <label for="heart-check-7" class="wishlist-heart position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-filled d-none"></i>
+                        </label>
+                    </div>
+                    <div class="card-body p-3">
+                        <h3 class="fw-bold text-dark m-0" style="font-size: 20px;">$739.65</h3>
+                        <h4 class="fw-semibold text-secondary my-1" style="font-size: 15px;">All Pros Real Estate</h4>
+                        <p class="text-muted small" style="font-size: 12px; line-height: 18px;">8502 Preston Rd. Inglewood, Maine 98380</p>
+                        <hr class="text-black-50 my-3">
+                        <div class="d-flex justify-content-between text-muted small fw-medium" style="font-size: 12px;">
+                            <span><i class="fa-solid fa-bed me-1 text-primary"></i> 3 Bed</span>
+                            <span><i class="fa-solid fa-bath me-1 text-primary"></i> 2 Bath</span>
+                            <span><i class="fa-solid fa-ruler-combined me-1 text-primary"></i> 1430 sqft</span>
+                        </div>
+                       </div>
+                     </div>
+                     </div>
+
+        </div> 
+    </div>
+</section>
+ <section class="renovations-section py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-center g-5">
+            
+            <div class="col-12 col-md-6 col-lg-5">
+            <div class="rounded-4 overflow-hidden shadow-sm mx-auto mx-lg-0" style="max-width: 440px;">
+                  <img src="./Images/feature-banner-1.jpg" class="w-100" alt="Historic House" style="aspect-ratio: 3 / 4; max-height: 520px; object-fit: cover; display: block;">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5 px-lg-4">
+                <h1 class="fw-bold text-dark mb-3" style="font-size: 28px; line-height: 38px; font-family: sans-serif;">
+                   We Specialize In Quality Home Renovations
+                </h1>
+
+                <p class="text-muted mb-4" style="font-size: 13.5px; line-height: 22px;">
+                    Looking to find your dream home? Our team is dedicated to helping you discover the perfect property that matches your lifestyle and needs.
+                </p>
+                
+                <div class="features-list d-flex flex-column gap-2" style="font-size: 13.5px;">
+                    
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Modern Design</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Prime Locations</span>
+                    </div>
+         <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Affordable Prices</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Trusted Agents</span>
+                    </div>
+
+       </div>
+        </div>
+
+       </div>
+    </div>
+   </section>
+       <section class="renovations-section py-5 bg-light">
+       <div class="container">
+        <div class="row align-items-center justify-content-center g-5">
+            
+        <div class="col-12 col-md-6 col-lg-5 order-2 order-md-1 px-lg-4">
+        <h2 class="fw-bold text-dark mb-3" style="font-size: 28px; line-height: 38px; font-family: sans-serif;">
+           We Are Experts In Historic Home Renovations  </h2>
+         <p class="text-muted mb-4" style="font-size: 13.5px; line-height: 22px;">
+        Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you'll love. From design to execution. </p>
+                
+                <div class="features-list d-flex flex-column gap-2" style="font-size: 13.5px;">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Smart Home</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Beautiful Scene Around</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Exceptional lifestyle</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check text-primary fs-5"></i>
+                        <span class="text-secondary fw-medium">Complete 24/7 Security</span>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2">
+                <div class="rounded-4 overflow-hidden shadow-sm mx-auto mx-lg-0" style="max-width: 440px;">
+                    <img src="./Images/feature-banner-2.jpg" class="w-100" alt="Historic House" 
+                         style="aspect-ratio: 3 / 4; max-height: 520px; object-fit: cover; display: block;">
+                </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5 text-center">
+   <div class="video-container">
+<div class="text-center">
+  <img src="./Images/video-card.jpg" class="rounded" alt="...">
+</div>
+     <div class="play-icon">
+     <i class="fa-solid fa-play"></i>
+     </div>
+   </div>
+
+</section>
+<section class="customers-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 mb-4 mb-lg-0">
+
+        <h2 class="fw-bold mb-4" style="font-size: 48px; line-height: 60px;">
+          We Help 1000+ Family Find Their True Home
+        </h2>
+
+        <div class="customers-avatars mt-4">
+       <img src="./Images/avatar-1.jpg" class="avatar" alt="">
+          <img src="./Images/avatar-2.jpg" class="avatar" alt="">
+          <img src="./Images/avatar-3.jpg" class="avatar" alt="">
+
+          <div class="avatar last-avatar">
+            <img src="./Images/avatar-4.jpg" class="w-100 h-100 rounded-circle">
+            <span class="plus-text">99+</span>
+          </div>
+
+          </div>
+
+          </div>
+
+       <div class="col-lg-6 text-lg-end text-center">
+        <a href="#" class="btn view-btn px-4 py-2 rounded-pill">
+          View All Stories
+          <i class="bi bi-arrow-up-right ms-2"></i>
+        </a>
+      </div>
+
+  </div>
+  </div>
+</section>
+<section class="stories-section py-5">
+<div class="container py-5">
+  <div class="row g-4">
+    
+        <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+        <img src="./Images/story-1.jpg" class="card-img" alt="Chris Traeger Family">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+          <h3 class="text-white fw-bold">Chris Traeger</h3>
+          <div class="text-warning">★★★★★</div>
+          <img src="./Images/story-avatar-1.jpg" class="rounded-circle border border-white border-2 position-absolute bottom-0 end-0 m-3" width="50" alt="Profile">
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+        <img src="./Images/story-2.jpg" class="card-img" alt="Duke Silver Family">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+          <h3 class="text-white fw-bold">Duke Silver</h3>
+          <div class="text-warning">★★★★★ <span class="text-white">5.0</span></div>
+          <img src="./Images/story-avatar-2.jpg" class="rounded-circle border border-white border-2 position-absolute bottom-0 end-0 m-3" width="50" alt="Profile">
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+        <img src="./Images/story-3.jpg" class="card-img" alt="Duke Silver Family">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+          <h3 class="text-white fw-bold">Tsukasa Aoir</h3>
+          <div class="text-warning">★★★★★ <span class="text-white">5.0</span></div>
+          <img src="./Images/story-avatar-3.jpg" class="rounded-circle border border-white border-2 position-absolute bottom-0 end-0 m-3" width="50" alt="Profile">
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+        <img src="./Images/story-4.jpg" class="card-img" alt="Duke Silver Family">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+          <h3 class="text-white fw-bold">Freida Varnes</h3>
+          <div class="text-warning">★★★★★ <span class="text-white">5.0</span></div>
+          <img src="./Images/story-avatar-4.jpg" class="rounded-circle border border-white border-2 position-absolute bottom-0 end-0 m-3" width="50" alt="Profile">
+        </div>
+         </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+        <img src="./Images/story-5.jpg" class="card-img" alt="Duke Silver Family">
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+          <h3 class="text-white fw-bold">Carl Lorthner</h3>
+          <div class="text-warning">★★★★★ <span class="text-white">5.0</span></div>
+          <img src="./Images/story-avatar-5.jpg" class="rounded-circle border border-white border-2 position-absolute bottom-0 end-0 m-3" width="50" alt="Profile">
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+        <img src="./Images/story-6.jpg" class="card-img" alt="Duke Silver Family">
+         <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+          <h3 class="text-white fw-bold">Marci Senter</h3>
+          <div class="text-warning">★★★★★ <span class="text-white">5.0</span></div>
+          <img src="./Images/story-avatar-6.jpg" class="rounded-circle border border-white border-2 position-absolute bottom-0 end-0 m-3" width="50" alt="Profile">
+          </div>
+         </div>
+         </div>
+ </div>
+</div>
+</section>
+
+<footer class="footer pt-5 pb-3">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6">
+        <img src="./Images/logo.png" alt="Wealthome Logo" class="footer-logo">
+        <p class="footer-text mt-3">
+          Lorem ipsum dolor sit amet consectetur. Non bibendum sit non congue
+          pharetra pulvinar leo. Sed ut amet ipsum.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick link</h5>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">Rent</a></li>
+        </ul>
+        </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Support</h5>
+        <ul class="footer-links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        </div>
+
+       <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Get in touch</h5>
+        <p class="footer-text">hello@wealthome.com</p>
+        <p class="footer-text">4140 Parker Rd. Allentown</p>
+
+         <div class="social-icons mt-3">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+  <div class="footer-bottom text-center mt-5 pt-3">
+    <p class="mb-0">Copyright 2026 Wealthome</p>
+  </div>
+   </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>                                
